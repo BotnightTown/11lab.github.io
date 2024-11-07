@@ -79,3 +79,37 @@ section{
 
 #top-word-right{color: green;}
 #top-word-wrong{color: brown;}
+
+#skill-level, #skill-word{font-weight: bolder;}
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-50%);
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none;
+  font-size: 20px;
+}
+#modal.visible{
+  opacity: 1;
+  display: block;
+}
+#modal.visible .modal-content{
+  transform: translateY(100%);
+  opacity: 1;
+}
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto; 
+  padding: 20px;  
+  border: 1px solid #888;
+  width: 80%;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
